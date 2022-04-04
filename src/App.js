@@ -7,32 +7,28 @@ function App() {
   const fruits = ["Lemon", "Watermelon", "Rasberry", "Apple"];
 
   const books = [
-    {name: "Mango", color: "Red"},
-    {name: "Apple", color: "Red"},
-    {name: "Cherry", color: "Red"},
-  ]
+    { name: "Mango", color: "Red" },
+    { name: "Apple", color: "Red" },
+    { name: "Cherry", color: "Red" },
+  ];
 
   const veggiesList = veggies.map((veggies) => {
     return <li>{veggies}</li>;
-    
   });
 
   const booksList = books.map((book) => {
     <li>
       {book.name}: {book.color}
-    </li>
-  })
+    </li>;
+  });
   return (
     <div className="App">
-<h1>Hello world</h1>
-{veggies} <br></br>
-{fruits}
-<ul>
-  {veggiesList}
-</ul>
-<ul>
-  {booksList}
-</ul>
+      <h1>Hello world</h1>
+      {veggies} <br></br>
+      {fruits}
+      <ul>{veggiesList}</ul>
+      <ul>{booksList}</ul>
+      <div>hello world</div>
     </div>
   );
 }
